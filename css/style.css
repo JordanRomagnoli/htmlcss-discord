@@ -1,0 +1,198 @@
+
+/*
+    RESET 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+    GENERAL
+*/
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container-small{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*
+    HEADER
+*/
+.top-header{
+    background-color: rgb(79, 186, 227);
+    padding: 10px 0;
+}
+
+.bot-header{
+    background-color: rgb(0, 0, 139);
+}
+
+/*
+    FRAMEWORK
+*/
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-end{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex-start{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.col20{
+    width: 20%
+}
+
+.col60{
+    width: 60%
+}
+
+.col40{
+    width: 40%
+}
+
+.col70{
+    width: 70%
+}
+
+.col30{
+    width: 30%
+}
+
+.padding50{
+    padding: 50px 0;
+}
+
+
+/* HEADER DEBUG */
+
+
+
+
+
+.nav-container{
+    flex-basis: 1000px;
+    background-color: rgb(218, 165, 32);
+}
+
+.nav-container > *{
+    padding: 10px 0;
+    border: 2px dashed black;
+}
+
+.login, .logo{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.jumbotron{
+    background-color: rgb(238, 130, 238);
+    width: 100%;
+    min-height: 500px;
+}
+
+.main-box{
+    width: 100%;
+    height: 500px;
+}
+
+
+/* MAIN DEBUG */
+
+main > div:nth-child(2n + 2){
+    background-color: lightgray;
+}
+
+
+
+.pink{
+    background-color: pink;
+    height: 450px;
+}
+
+.blue{
+    background-color: dodgerblue;
+    height: 450px;
+}
+
+.main-box-green{
+    width: 100%;
+    min-height: 900px;
+    background-color: green;
+    border: 2px dashed black;
+}
+
+
+/* FOOTER DEBUG */
+
+.top-footer{
+    background-color: rgb(35, 39, 42);
+    padding: 10px 0 30px 0;
+}
+
+.coral{
+    background-color: lightcoral;
+}
+    
+.col-footer{
+    width: 25%;
+    border: 2px dashed white;
+    background-color: cadetblue;
+}
+
+.bot-footer{
+    background-color: rgb(35, 39, 42);
+    padding-top: 20px;
+}
+
+.nav_footer-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background-color: aquamarine;
+}
+
+.nav_footer-container > *{
+    padding: 5px;
+    background-color: lightcoral;
+    border: 1px dashed black;
+}
+
+
+/* GENERAL DEBUG */
+
+/* section > div{
+    border: 2px dashed black;
+} */
+
+
+
+ .main-box *{
+    height: 100%;
+}
+
+.main-box > section{
+    border: 2px dashed black;
+}
+
+.nav_footer-container{
+    border: 2px dashed black;
+}
