@@ -23,15 +23,27 @@
     margin: 0 auto;
 }
 
-.button{
+.small-button{
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 20px;
 }
 
+.big-button{
+    text-decoration: none;
+    padding: 15px 15px;
+    border-radius: 25px;
+}
+
+h2{
+    font-size: 2.8em;
+}
 /*
     HEADER
 */
+
+
+/* TOP HEADER */
 
 .top-header{
     padding: 10px 0;
@@ -53,7 +65,7 @@ header nav li{
 }
 
 .menu-container > *{
-    padding-top: 10px;
+    padding: 10px 0;
 }
 
 .login, .logo{
@@ -71,10 +83,84 @@ header nav li{
     margin: 0 10px;
 }
 
-.menu-container .login > .button{
-    color: black;
+.menu-container .login > .small-button{
+    color: rgb(35, 39, 42);
     background-color: white;
     font-size: 0.8em;
+}
+
+/* BOTTOM HEADER */
+
+.jumbotron{
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+    color: white;
+}
+
+.jumbotron > h2{
+    margin-bottom: 40px;
+    padding-top: 150px;
+}
+
+.jumbotron > p{
+    margin-bottom: 30px;
+    line-height: 1.5em;
+}
+
+.jumbotron > .big-button{
+    margin: 0 5px;
+}
+
+.jumbotron > .big-button.download-mac{
+    background-color: white;
+    color: rgb(35, 39, 42);
+}
+
+.jumbotron > .big-button.open-in-browser{
+    background-color: rgb(35, 39, 42);
+    color: white;
+}
+
+
+/*
+    MAIN
+*/
+
+main > div:nth-child(2n + 2){
+    background-color: rgb(246, 246, 246);
+}
+
+.main-box{
+    width: 100%;
+    height: 500px;
+}
+
+main .image > img{
+    display: block;
+    width: 100%;
+}
+
+.image,.description{
+    height: 100%;
+    
+}
+
+.description{
+    color: rgb(35, 39, 42);
+    padding-top: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow: hidden;
+}
+
+.description > h3{
+    margin-bottom: 0.8em;
+}
+
+.description > p{
+    font-size: 0.9em;
+    line-height: 1.5em;
 }
 
 
@@ -128,72 +214,50 @@ header nav li{
 /* HEADER DEBUG */
 
 
+/* MAIN DEBUG */
 
 
-.jumbotron{
-    /* background-color: rgb(238, 130, 238); */
+
+.big-box{
     width: 100%;
-    min-height: 500px;
+    min-height: 900px;
     text-align: center;
-    color: white;
+    padding-top: 40px;
 }
 
-.jumbotron > h1{
-    margin-bottom: 40px;
-    padding-top: 150px;
-    font-size: 3em;
-}
-
-.jumbotron > p{
+.big-box > h2{
     margin-bottom: 20px;
 }
 
-.jumbotron > .button{
-    padding: 10px 15px;
-    margin: 0 5px;
+.big-box > p{
+    line-height: 1.5em;
 }
 
-.jumbotron > .button.download-mac{
-    background-color: white;
-    color: black;
+.big-box > img{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.jumbotron > .open-in-browser{
-    background-color: black;
+.secondary-box{
+    background-image: url(../img/stars.svg);
+    background-size: 480px;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.secondary-box > h3{
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+.secondary-box > .big-button{
     color: white;
+    background-color: rgb(114, 137, 218);
 }
-
-.main-box{
-    width: 100%;
-    height: 500px;
-}
-
-
-/* MAIN DEBUG */
-
-main > div:nth-child(2n + 2){
-    background-color: lightgray;
-}
-
-
-
-.pink{
-    background-color: pink;
-    height: 450px;
-}
-
-.blue{
-    background-color: dodgerblue;
-    height: 450px;
-}
-
-.main-box-green{
-    width: 100%;
-    min-height: 900px;
-    background-color: green;
-    border: 2px dashed black;
-}
-
 
 /* FOOTER DEBUG */
 
@@ -202,8 +266,18 @@ main > div:nth-child(2n + 2){
     padding: 10px 0 30px 0;
 }
 
+.top-footer > .container{
+    border-bottom: 1px solid rgb(114, 137, 218);
+}
+
 .coral{
     background-color: lightcoral;
+    padding: 30px 20px;
+}
+
+.coral > h3{
+    font-size: 1.5em;
+    color: rgb(114, 137, 218);
 }
     
 .col-footer{
@@ -228,26 +302,21 @@ main > div:nth-child(2n + 2){
 .nav_footer-container > *{
     padding: 5px;
     background-color: lightcoral;
-    border: 1px dashed black;
+    border: 1px dashed rgb(35, 39, 42);
 }
 
 
 /* GENERAL DEBUG */
 
-/* section > div{
-    border: 2px dashed black;
+
+ /* footer .main-box *, .main-box > *{
+    height: 100%;
 } */
 
-
-
- .main-box *{
-    height: 100%;
-}
-
-.main-box > section{
-    border: 2px dashed black;
+/* .main-box > section{
+    border: 2px dashed rgb(35, 39, 42);
 }
 
 .nav_footer-container{
-    border: 2px dashed black;
-}
+    border: 2px dashed rgb(35, 39, 42);
+} */
