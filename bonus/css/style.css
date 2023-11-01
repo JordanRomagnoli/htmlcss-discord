@@ -363,3 +363,37 @@ main .image > img{
     display: block;
     width: 100%;
 }
+
+/*
+    BONUS 
+*/
+
+.wave{
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: -50px;
+    margin-top: 20px;
+}
+
+.wave > img, .wave-reverse > img{
+    width: 100%;
+    filter: opacity(4%);
+    height: 50px;
+}
+
+.wave-reverse{
+    display: flex;
+    justify-content: stretch;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.wave-reverse > img{
+    transform: rotate(180deg);
+}
